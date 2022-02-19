@@ -3,13 +3,56 @@
 body {
   height: 100vh;
   margin: 0;
+
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background-color: rgb(238, 238, 238);
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  color:rgb(121, 121, 121);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 img {
   width: 600px;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
 
 button {
   font-family: Roboto, sans-serif;
